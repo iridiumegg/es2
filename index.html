@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAS Technician Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>BAS Technician Assessment</h1>
+      <p class="header-sub">WebCTRL / BACnet Fundamentals</p>
+    </div>
+  </header>
+
+  <main id="app">
+
+    <!-- ── Welcome screen ──────────────────────────────────────────────── -->
+    <section id="screen-welcome" class="screen active">
+      <div class="card">
+        <h2>Welcome</h2>
+        <p>
+          This assessment tests your knowledge of WebCTRL and BACnet fundamentals.
+          Answer every question, then submit your results. Your supervisor will
+          receive an email with your score and a review summary.
+        </p>
+        <div class="form-group">
+          <label for="tech-name">Your Full Name</label>
+          <input type="text" id="tech-name" placeholder="e.g. Alex Johnson" autocomplete="name">
+        </div>
+        <button id="btn-start" class="btn btn-primary" disabled>Start Test →</button>
+      </div>
+    </section>
+
+    <!-- ── Quiz screen ──────────────────────────────────────────────────── -->
+    <section id="screen-quiz" class="screen">
+
+      <div class="progress-container">
+        <div class="progress-labels">
+          <span id="progress-text">Question 1 of 16</span>
+          <span id="progress-points"></span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="card question-card" id="question-card">
+        <div class="question-part" id="question-part"></div>
+        <div class="scenario-box" id="scenario-box" style="display:none;"></div>
+        <div class="question-text" id="question-text"></div>
+        <div class="answers-container" id="answers-container"></div>
+      </div>
+
+      <div class="nav-container">
+        <button id="btn-next" class="btn btn-primary" disabled>Next →</button>
+      </div>
+
+    </section>
+
+    <!-- ── Results screen ──────────────────────────────────────────────── -->
+    <section id="screen-results" class="screen">
+      <div class="card results-card">
+
+        <div class="score-display">
+          <div class="score-circle">
+            <span id="score-percent">0%</span>
+          </div>
+          <div class="score-details">
+            <h2>Test Complete</h2>
+            <p id="score-fraction"></p>
+            <p id="tech-name-display"></p>
+          </div>
+        </div>
+
+        <div class="missed-section">
+          <h3>Questions to Review</h3>
+          <div id="missed-list"></div>
+        </div>
+
+        <div class="email-section">
+          <button id="btn-send-email" class="btn btn-primary">Send Results to Supervisor</button>
+          <p id="email-status" class="email-status"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Question data -->
+  <script src="questions.js"></script>
+  <!-- App logic -->
+  <script src="app.js"></script>
+
+</body>
+</html>
