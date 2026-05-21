@@ -11,9 +11,9 @@
 //       {{report}}     — full missed-question summary (pre-formatted text)
 //  4. Paste your Service ID, Template ID, and Public Key below.
 // ─────────────────────────────────────────────────────────────────────────────
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID  = 'service_twrhmkv';
+const EMAILJS_TEMPLATE_ID = 'template_0chbw3a';
+const EMAILJS_PUBLIC_KEY  = 'yzjo7MW0MOK8x3yla';
 
 // ─────────────────────────────────────────────────────────────────────────────
 
