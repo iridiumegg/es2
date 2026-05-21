@@ -18,13 +18,13 @@ const WORD_BANK = [
 
 const QUESTIONS = [
 
-  // ── Part 1: Multiple Choice (2 points each) ────────────────────────────────
+  // ── Part 1: Multiple Choice (3 points each = 30 pts) ──────────────────────
 
   {
     id: 1,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'Which microblock reads a continuous variable signal such as temperature or pressure from a physical sensor wired to the controller?',
     choices: [
       { letter: 'A', text: 'BACnet Binary Input (BBI)' },
@@ -38,7 +38,7 @@ const QUESTIONS = [
     id: 2,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'A BAI microblock is displaying a question mark (?) in WebCTRL. What is the most likely cause?',
     choices: [
       { letter: 'A', text: 'The sensor is physically disconnected from the controller' },
@@ -52,7 +52,7 @@ const QUESTIONS = [
     id: 3,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'A filter status differential pressure switch needs to be wired to a controller. Which microblock type should be used?',
     choices: [
       { letter: 'A', text: 'BACnet Analog Input (BAI)' },
@@ -66,7 +66,7 @@ const QUESTIONS = [
     id: 4,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'A cooling coil valve actuator expects a 2–10 Vdc signal and is controlled by a PID that outputs 0–100%. What is the correct BAO configuration?',
     choices: [
       { letter: 'A', text: 'Minimum Value = 2, Maximum Value = 10' },
@@ -80,7 +80,7 @@ const QUESTIONS = [
     id: 5,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'Which property on a BACnet Binary Output prevents a supply fan from short cycling by enforcing minimum run and rest periods?',
     choices: [
       { letter: 'A', text: 'COV Increment' },
@@ -94,7 +94,7 @@ const QUESTIONS = [
     id: 6,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'A water meter outputs 1 pulse per 15 gallons. Which microblock and Gain value should be used?',
     choices: [
       { letter: 'A', text: 'BACnet Analog Input, Gain = 1' },
@@ -108,7 +108,7 @@ const QUESTIONS = [
     id: 7,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'An older damper actuator has two wires — one for Open and one for Close — with no analog signal. Which output microblock should be used?',
     choices: [
       { letter: 'A', text: 'BACnet Analog Output (BAO)' },
@@ -122,7 +122,7 @@ const QUESTIONS = [
     id: 8,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'Which two settings must BOTH be enabled on a BAI microblock for trend data to appear in a long-term WebCTRL chart?',
     choices: [
       { letter: 'A', text: 'Lock Present Value and Network Visible' },
@@ -136,7 +136,7 @@ const QUESTIONS = [
     id: 9,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'An alarm for a freezestat keeps triggering and clearing every few minutes near the threshold. Which property should be increased to stop this?',
     choices: [
       { letter: 'A', text: 'Delay Seconds only' },
@@ -150,7 +150,7 @@ const QUESTIONS = [
     id: 10,
     part: 'Part 1 — Multiple Choice',
     type: 'multiplechoice',
-    points: 2,
+    points: 3,
     text: 'An RS Zone Sensor microblock is used for which purpose?',
     choices: [
       { letter: 'A', text: 'Reading a 4–20 mA pressure sensor wired to a universal input' },
@@ -161,13 +161,13 @@ const QUESTIONS = [
     correct: 'B',
   },
 
-  // ── Part 2: True / False (1 point each) ───────────────────────────────────
+  // ── Part 2: True / False (2 points each = 20 pts) ────────────────────────
 
   {
     id: 11,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: 'The BACnet Analog Input (BAI) microblock can only read temperature sensors.',
     correct: 'FALSE',
   },
@@ -175,7 +175,7 @@ const QUESTIONS = [
     id: 12,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: "Setting 'Polarity' to Reversed on a BBI microblock means the output is ON when the physical contact is OPEN.",
     correct: 'TRUE',
   },
@@ -183,7 +183,7 @@ const QUESTIONS = [
     id: 13,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: "You must enable both 'Enable Trend Log' AND 'Enable Trend Historian' to view long-term trend data in WebCTRL reports.",
     correct: 'TRUE',
   },
@@ -191,7 +191,7 @@ const QUESTIONS = [
     id: 14,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: 'A Floating Motor Output uses three physical output wires: Open, Close, and a neutral reference.',
     correct: 'FALSE',
   },
@@ -199,7 +199,7 @@ const QUESTIONS = [
     id: 15,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: "The 'Dead Band' property on an alarm prevents the alarm from re-triggering immediately after the value returns to just inside the normal limit.",
     correct: 'TRUE',
   },
@@ -207,7 +207,7 @@ const QUESTIONS = [
     id: 16,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: "Setting 'Lock Present Value' on an output microblock means the controller will output the locked value regardless of what the control logic commands.",
     correct: 'TRUE',
   },
@@ -215,7 +215,7 @@ const QUESTIONS = [
     id: 17,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: "The Pulse to Analog Input (PAI) microblock requires the Input Type to be set to 'Counter Input'.",
     correct: 'TRUE',
   },
@@ -223,7 +223,7 @@ const QUESTIONS = [
     id: 18,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: 'A BACnet Binary Output (BBO) can output variable voltage levels such as 0–10 Vdc to position a modulating valve.',
     correct: 'FALSE',
   },
@@ -231,7 +231,7 @@ const QUESTIONS = [
     id: 19,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: 'The RS Zone Sensor and LogiStat Zone Sensor are interchangeable and use the same microblock in Eikon.',
     correct: 'FALSE',
   },
@@ -239,18 +239,18 @@ const QUESTIONS = [
     id: 20,
     part: 'Part 2 — True / False',
     type: 'truefalse',
-    points: 1,
+    points: 2,
     text: "The 'Expander' field on an I/O microblock should be set to 0 when the sensor is wired directly to the controller with no expander board.",
     correct: 'TRUE',
   },
 
-  // ── Part 3: Fill in the Blank (1 point each) ──────────────────────────────
+  // ── Part 3: Fill in the Blank (2 points each = 20 pts) ───────────────────
 
   {
     id: 21,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'The abbreviation for BACnet Analog Input is ___.',
     correct: 'BAI',
   },
@@ -258,7 +258,7 @@ const QUESTIONS = [
     id: 22,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'The abbreviation for BACnet Binary Output is ___.',
     correct: 'BBO',
   },
@@ -266,7 +266,7 @@ const QUESTIONS = [
     id: 23,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'A ___ microblock is used when a utility meter outputs pulses and you need to calculate an average flow rate.',
     correct: 'PAI',
   },
@@ -274,7 +274,7 @@ const QUESTIONS = [
     id: 24,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'The property that defines how much inside the normal range a value must return before an alarm clears is called the ___.',
     correct: 'Dead Band',
   },
@@ -282,7 +282,7 @@ const QUESTIONS = [
     id: 25,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'To archive controller trend data to the WebCTRL server database, you must enable Trend Log AND Trend ___.',
     correct: 'Historian',
   },
@@ -290,7 +290,7 @@ const QUESTIONS = [
     id: 26,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'On a Pulse to Analog Input, the ___ property defines the real-world quantity that each pulse represents.',
     correct: 'Gain',
   },
@@ -298,7 +298,7 @@ const QUESTIONS = [
     id: 27,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'A ___ microblock controls a bi-directional actuator using two separate on/off digital outputs.',
     correct: 'FMO',
   },
@@ -306,7 +306,7 @@ const QUESTIONS = [
     id: 28,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'The ___ microblock sends a continuous variable signal from the control program to a physical output such as a valve actuator or VFD.',
     correct: 'BAO',
   },
@@ -314,7 +314,7 @@ const QUESTIONS = [
     id: 29,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'On a BACnet Binary Input, the text label displayed in WebCTRL when the output is ON is called the ___.',
     correct: 'Active Text',
   },
@@ -322,12 +322,12 @@ const QUESTIONS = [
     id: 30,
     part: 'Part 3 — Fill in the Blank',
     type: 'fillinblank',
-    points: 1,
+    points: 2,
     text: 'A Pulse-Width Output varies the ___ of its on signal rather than outputting a continuous analog voltage.',
     correct: 'Duration',
   },
 
-  // ── Part 4: Matching (1 point per correct pair, 10 points total) ──────────
+  // ── Part 4: Matching (1 point per correct pair = 10 pts) ─────────────────
 
   {
     id: 'M',
@@ -361,13 +361,13 @@ const QUESTIONS = [
     ],
   },
 
-  // ── Part 5: Scenario Questions (2 points each) ────────────────────────────
+  // ── Part 5: Scenario Questions (5 points each = 20 pts) ──────────────────
 
   {
     id: 31,
     part: 'Part 5 — Scenario Questions',
     type: 'scenario',
-    points: 2,
+    points: 5,
     scenario: 'You are reviewing a VAV box in WebCTRL and notice the zone temperature sensor is reading 210°F. The zone occupant says it feels comfortable in the room.',
     text: 'What is the most likely cause of the incorrect sensor reading?',
     choices: [
@@ -382,7 +382,7 @@ const QUESTIONS = [
     id: 32,
     part: 'Part 5 — Scenario Questions',
     type: 'scenario',
-    points: 2,
+    points: 5,
     scenario: "A supply fan BBO in WebCTRL is commanding 'Fan On' but the fan is not running. You have confirmed the controller is communicating normally.",
     text: 'What should you check next?',
     choices: [
@@ -397,7 +397,7 @@ const QUESTIONS = [
     id: 33,
     part: 'Part 5 — Scenario Questions',
     type: 'scenario',
-    points: 2,
+    points: 5,
     scenario: 'A building operator reports that trend charts for a critical chilled water supply temperature sensor only show data for the past 2 days, even though trends were enabled months ago.',
     text: 'What is the most likely cause?',
     choices: [
@@ -412,7 +412,7 @@ const QUESTIONS = [
     id: 34,
     part: 'Part 5 — Scenario Questions',
     type: 'scenario',
-    points: 2,
+    points: 5,
     scenario: 'During commissioning, a TAB technician asks you to lock the outside air damper at exactly 50% open so they can measure airflow. The damper is controlled by a BACnet Analog Output.',
     text: 'How do you accomplish this in WebCTRL?',
     choices: [
