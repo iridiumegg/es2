@@ -46,7 +46,7 @@ const QUESTIONS = [
       { letter: 'C', text: 'The Display Name field is blank' },
       { letter: 'D', text: 'The Trend Log is not enabled' },
     ],
-    correct: 'A',
+    correct: 'B',
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ const QUESTIONS = [
       { letter: 'C', text: 'Minimum Value = 4, Maximum Value = 20' },
       { letter: 'D', text: 'Minimum Value = 10, Maximum Value = 2' },
     ],
-    correct: 'A',
+    correct: 'B',
   },
   {
     id: 5,
