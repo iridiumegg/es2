@@ -447,6 +447,81 @@ main {
 .email-status.success { color: var(--success); font-weight: 600; }
 .email-status.error   { color: var(--danger);  font-weight: 600; }
 
+/* ── Matching ────────────────────────────────────────────────────────────── */
+.matching-defs {
+  background: var(--grey-50);
+  border: 1px solid var(--grey-200);
+  border-radius: 8px;
+  padding: .9rem 1rem;
+  margin-bottom: 1.25rem;
+  font-size: .88rem;
+}
+
+.matching-defs strong {
+  display: block;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--grey-700);
+  margin-bottom: .6rem;
+}
+
+.def-list { display: flex; flex-direction: column; gap: .35rem; }
+
+.def-item { color: var(--grey-700); line-height: 1.45; }
+.def-item strong { color: var(--navy); margin-right: .3rem; }
+
+.matching-rows {
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+
+.match-row {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  background: var(--grey-50);
+  border: 2px solid var(--grey-200);
+  border-radius: 8px;
+  padding: .6rem .9rem;
+  transition: border-color .18s;
+}
+
+.match-row:has(.match-select:not([value=""])) { border-color: var(--teal); }
+
+.match-term {
+  min-width: 3rem;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: .95rem;
+}
+
+.match-select {
+  flex: 1;
+  padding: .35rem .6rem;
+  border: 2px solid var(--grey-200);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--grey-900);
+  font-size: .95rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color .18s;
+}
+
+.match-select:focus { border-color: var(--teal); }
+
+.match-miss-row {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  margin-top: .5rem;
+  padding-top: .5rem;
+  border-top: 1px solid #fecaca;
+  font-size: .88rem;
+}
+
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 @media (max-width: 480px) {
   .card { padding: 1.25rem; }
