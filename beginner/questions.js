@@ -275,7 +275,7 @@ const QUESTIONS = [
     points: 8,
     text: 'Match each term to its correct definition.',
     pairs: [
-      { term: 'Analog Input (AI)',  correct: 'A' },
+      { term: 'Analog Output (AO)', correct: 'A' },
       { term: 'Digital Output (DO)', correct: 'B' },
       { term: 'BACnet',             correct: 'C' },
       { term: 'Trend Log',          correct: 'D' },
